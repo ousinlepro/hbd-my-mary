@@ -217,6 +217,16 @@ main{ position:relative; z-index:2; }
   font-family:var(--hand); color:var(--gold-soft); font-size:clamp(20px,2.6vw,26px);
   margin-top:20px; opacity:.92;
 }
+.date-badge{
+  display:inline-flex; align-items:center; gap:10px;
+  border:1px solid rgba(201,161,90,.5);
+  padding:8px 20px; border-radius:30px;
+  font-family:var(--sans); font-size:12px; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold-soft);
+  margin:4px 0 22px;
+  background:rgba(201,161,90,.06);
+}
+.date-badge::before{ content:"❧"; font-size:13px; opacity:.8; }
 
 /* ---------- hero ---------- */
 #hero{ text-align:center; }
@@ -360,7 +370,8 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
   <button data-target="ch1" data-label="Chapitre I" aria-label="Aller au chapitre 1"></button>
   <button data-target="ch2" data-label="Chapitre II" aria-label="Aller au chapitre 2"></button>
   <button data-target="ch3" data-label="Chapitre III" aria-label="Aller au chapitre 3"></button>
-  <button data-target="ch4" data-label="Chapitre IV" aria-label="Aller au chapitre 4"></button>
+  <button data-target="ch5" data-label="Chapitre IV" aria-label="Aller au chapitre 4"></button>
+  <button data-target="ch6" data-label="Chapitre V" aria-label="Aller au chapitre 5"></button>
   <button data-target="gallery" data-label="Souvenirs" aria-label="Aller à la galerie"></button>
   <button data-target="finale" data-label="20 ans" aria-label="Aller à l'anniversaire"></button>
 </nav>
@@ -387,6 +398,7 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
       <h2>La correction</h2>
       <p>Tout a commencé avec un exercice de physique, en Terminale. Une correction que j'avais sur mon téléphone, et que tu voulais voir.</p>
       <p>Je te l'ai montrée. Tu as regardé, intéressée, et puis — sans grande cérémonie — tu m'as donné ton numéro pour que je te l'envoie.</p>
+      <p>Ta toute première réponse tenait en quelques mots, simples et polis, presque timides — un simple merci. Je ne savais pas encore que ces quelques mots allaient ouvrir la porte à tout le reste.</p>
       <p>On pensait tous les deux que ça s'arrêterait là. Un service rendu, un exercice de plus dans un cahier. <em>On ne savait pas encore qu'on venait d'écrire la première ligne de quelque chose.</em></p>
       <p class="aside">Qui aurait cru qu'un exercice de physique cacherait autant de chimie.</p>
     </div>
@@ -412,22 +424,42 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
     <div class="chapter-inner">
       <div class="eyebrow">Chapitre III</div>
       <h2>Inséparables</h2>
-      <p>Une année de Terminale, ce n'est pas grand-chose sur le papier. Mais pour nous, ça a suffi pour tout changer.</p>
-      <p>De la correction d'un exercice à des heures de discussion. Des regards discrets en classe aux fous rires qu'on retenait pour ne rien laisser paraître. On a construit, en silence, quelque chose que personne autour de nous n'a vu venir.</p>
-      <p>Et aujourd'hui encore, je repense à cette salle de classe, à ce téléphone qu'on se passait discrètement, et je me dis que le hasard a très bien fait les choses.</p>
+      <p>Au tout début, on était timides, tous les deux. Les mots mettaient du temps à sortir, les silences duraient un peu trop longtemps, et on n'osait pas vraiment dire ce qu'on ressentait.</p>
+      <div class="date-badge">20 mars 2026</div>
+      <p>Et puis il y a eu ce jour-là. Le 20 mars 2026, notre histoire est devenue officielle — ce n'était plus seulement des messages échangés en cachette, mais une vraie promesse entre nous deux.</p>
+      <p>Le lendemain, on a passé une nuit entière à débattre, jusqu'à quatre heures du matin, de la différence entre "je t'aime bien" et "je t'aime". Un mot en plus, un mot en moins, et tout changeait de sens. On a fini par se le dire, pour de vrai, sans un "bien" qui vient tout adoucir.</p>
+      <p>C'est aussi à peu près à cette époque qu'on s'est inventé nos propres surnoms, rien qu'à nous : toi tu m'appelles Remy, moi je t'appelle Jerry. Une bêtise entre nous, restée depuis.</p>
+      <p>Depuis, on est devenus inséparables. Toute cette timidité du début n'aura été qu'un prélude à quelque chose de bien plus fort.</p>
     </div>
   </section>
 
   <div class="divider" aria-hidden="true">❧</div>
 
   <!-- ===================== CHAPITRE IV ===================== -->
-  <section id="ch4" class="chapter">
+  <section id="ch5" class="chapter">
     <div class="chapter-inner">
       <div class="eyebrow">Chapitre IV</div>
       <h2>La seule histoire qui te fait vraiment peur</h2>
-      <p>Toi qui adores les histoires d'horreur, les silences qui durent trop longtemps et les fins qu'on n'a pas vues venir — je t'avoue que je n'ai qu'une seule histoire qui me terrifie vraiment.</p>
+      <p>Toi qui écoutes des histoires d'horreur le soir, qui te fais parfois si peur que tu éteins tout en plein milieu — et qui recommences quand même le lendemain, parce que tu adores vraiment ça.</p>
+      <p>Il y a eu des nuits où les djinns et les histoires qui font peur te travaillaient un peu trop l'esprit. Je t'ai rappelé une chose simple, ce soir-là : face à toi, ce sont eux qui devraient avoir peur.</p>
+      <p>Toi qui adores les fins qu'on n'a pas vues venir et les silences qui durent trop longtemps — je t'avoue que je n'ai qu'une seule histoire qui me terrifie vraiment.</p>
       <p>Ce n'est ni un fantôme, ni une maison hantée. C'est l'idée, même lointaine, d'une vie sans toi dedans.</p>
       <p class="aside">Rassure-toi, celle-là, je ne compte pas la lire jusqu'au bout.</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">❧</div>
+
+  <!-- ===================== CHAPITRE V ===================== -->
+  <section id="ch6" class="chapter">
+    <div class="chapter-inner">
+      <div class="eyebrow">Chapitre V</div>
+      <h2>Merci d'être restée</h2>
+      <p>Il y a une vérité que je dois écrire ici, parce qu'elle mérite d'être dite avec autant de sincérité que possible. Quand on a commencé, toi et moi, je n'avais pas encore complètement tourné une page du passé — un long conflit, presque terminé, mais pas encore tout à fait.</p>
+      <p>Je te l'ai dit tôt, avant que les choses n'aillent plus loin entre nous : il y avait quelque chose que tu devais savoir, quelque chose qui pouvait tout arrêter avant même que ça commence vraiment. Tu as insisté pour savoir quand même. Tu m'as dit que tu n'allais pas me laisser comme ça.</p>
+      <p>Il m'a fallu des mois pour trouver le courage de tout te raconter, en juillet. Et malgré tout ce que ça a pu te faire ressentir, tu m'as pardonné.</p>
+      <p>Je ne suis pas sûr de le mériter totalement, mais je te promets de le mériter un peu plus chaque jour. Merci d'être restée. Merci d'avoir choisi la vérité plutôt que de me tourner le dos.</p>
+      <p class="aside">Ce que tu m'as offert ce jour-là n'a pas de prix : la possibilité d'être honnête, et d'être aimé quand même.</p>
     </div>
   </section>
 
@@ -486,6 +518,7 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
         <h2>Joyeux 20e anniversaire, Ma Maryam 🕯️</h2>
         <p>Vingt ans, une histoire qui a commencé par une correction de physique, un secret bien gardé, et une certitude qui n'a fait que grandir depuis.</p>
         <p>Je te souhaite une année aussi belle que toi — et je compte bien continuer à écrire les prochains chapitres à tes côtés.</p>
+        <p>Dans mon téléphone, ton prénom a fini par disparaître. À sa place : <span style="direction:rtl;unicode-bidi:embed;">حياتي</span> — "ma vie", en arabe. Ce n'était pas un hasard.</p>
         <p class="aside">Joyeux anniversaire, mon amour.</p>
       </div>
     </div>
@@ -647,7 +680,7 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
     var diff = target - now;
     if(diff <= 0){
       countdownWrap.style.display = 'none';
-      revealBirthday();
+      celebrate();
       return;
     }
     var days = Math.floor(diff / (1000*60*60*24));
@@ -664,20 +697,20 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
 
   /* ---------------- Bougie + confettis ---------------- */
   var candle = document.getElementById('candle');
+  var candleHint = document.querySelector('.candle-hint');
   var birthdayMessage = document.getElementById('birthday-message');
   var blown = false;
 
-  function revealBirthday(){
-    birthdayMessage.classList.add('show');
-  }
-
-  candle.addEventListener('click', function(){
+  function celebrate(){
     if(blown) return;
     blown = true;
     candle.classList.add('blown');
+    if(candleHint) candleHint.textContent = 'joyeux anniversaire 🎉';
     launchConfetti();
-    revealBirthday();
-  });
+    birthdayMessage.classList.add('show');
+  }
+
+  candle.addEventListener('click', celebrate);
 
   /* ---------------- Confettis (canvas, vanille) ---------------- */
   var confettiCanvas = document.getElementById('confetti-canvas');
