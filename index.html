@@ -8,7 +8,6 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="icone.png">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Caveat:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -87,6 +86,11 @@ h1,h2,h3{font-family:var(--serif-display); font-weight:600; letter-spacing:.02em
 .envelope-wrap{
   text-align:center;
   padding:0 24px;
+  animation:cover-rise 1.3s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes cover-rise{
+  from{ opacity:0; transform:translateY(22px) scale(.97); }
+  to{ opacity:1; transform:translateY(0) scale(1); }
 }
 .envelope{
   width:min(78vw, 260px); aspect-ratio:1/0.68;
@@ -126,18 +130,20 @@ h1,h2,h3{font-family:var(--serif-display); font-weight:600; letter-spacing:.02em
 #cover.opened .seal{ transform:translate(-50%,-50%) scale(0) rotate(35deg); opacity:0; }
 @keyframes seal-pulse{
   0%,100%{ box-shadow:0 6px 18px rgba(0,0,0,.5), 0 0 0 rgba(201,161,90,0); }
-  50%{ box-shadow:0 6px 18px rgba(0,0,0,.5), 0 0 22px rgba(201,161,90,.35); }
+  50%{ box-shadow:0 6px 18px rgba(0,0,0,.5), 0 0 28px rgba(201,161,90,.45); }
 }
 .cover-label{
-  font-family:var(--sans); letter-spacing:.28em; text-transform:uppercase;
+  font-family:var(--sans); letter-spacing:.32em; text-transform:uppercase;
   font-size:11px; color:var(--muted); margin-bottom:10px;
 }
 .cover-title{
-  font-family:var(--hand); color:var(--gold-soft); font-size:clamp(28px,7vw,40px);
-  margin-bottom:6px;
+  font-family:var(--hand); color:var(--gold-soft); font-size:clamp(30px,7.5vw,42px);
+  margin-bottom:8px;
+  text-shadow:0 0 24px rgba(230,203,143,.25);
 }
 .cover-hint{
-  font-family:var(--sans); font-size:12px; color:var(--muted); letter-spacing:.05em;
+  font-family:var(--sans); font-size:12px; color:var(--muted); letter-spacing:.08em;
+  opacity:.85;
 }
 
 /* ---------- nav chapitres ---------- */
@@ -558,7 +564,6 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
         <div class="gallery-item" data-src="images/photo2.jpg"></div>
         <div class="gallery-item" data-src="images/photo3.jpg"></div>
         <div class="gallery-item" data-src="images/photo4.jpg"></div>
-        <div class="gallery-item" data-src="images/photo5.jpg"></div>
       </div>
     </div>
   </section>
@@ -830,8 +835,7 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
     cdMin.textContent = pad(min);
     cdSec.textContent = pad(sec);
   }
-  tickCountdown();
-  setInterval(tickCountdown, 1000);
+  // (déclenché plus bas, une fois que tout le reste du script est prêt)
 
   /* ---------------- Bougie + confettis ---------------- */
   var candle = document.getElementById('candle');
@@ -906,6 +910,12 @@ footer .sig{ color:var(--gold-soft); font-size:22px; display:block; margin-top:6
     }
     step();
   }
+
+  /* ---------------- Démarrage du compte à rebours ---------------- */
+  // Fait maintenant que la bougie et les confettis sont prêts, pour que
+  // celebrate() (déclenché si la date est déjà passée) fonctionne correctement.
+  tickCountdown();
+  setInterval(tickCountdown, 1000);
 })();
 </script>
 
